@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Challenge</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="col-sm-3">
+        <div class="box">
+          <p class="bold">This is a button</p>
+          <p>I am 200px high.</p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="box">
+          <p class="bold">This is a button</p>
+          <p>I am 200px high.</p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="box">
+          <p class="bold">This is a button</p>
+          <p>I am 200px high.</p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="box">
+          <p class="bold">This is a button</p>
+          <p>I am 200px high.</p>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="header">
+          <div class="horizontal-line"></div>
+          <h3>This is a header</h3>
+          <div class="horizontal-line"></div>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="counter">
+          <h3>The buttons have been clicked <span></span> times.</h3>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function() {
+        var counter = 0;
+        $(".box").click(function() {
+          counter += 1;
+          console.log(counter);
+          $(".counter").show();
+          $("span").text(counter);
+        });
+      });
+    </script>
+  </body>
+</html>

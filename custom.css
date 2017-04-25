@@ -1,0 +1,45 @@
+.box {
+  height: 200px;
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  text-align: right;
+  border-radius: 5px;
+  padding: 7px 5px 0 5px;
+}
+
+.counter {
+  display: none;
+  background-color: grey;
+  border-radius: 5px;
+  height: 300px;
+  text-align: center;
+  color: white;
+}
+
+.header {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.header h3 {
+  display: inline-block;
+  color: red;
+}
+
+
+.horizontal-line {
+  display: inline-block;
+  width: 30%;
+  height: 1px;
+  background-color: red;
+}
+
+.counter h3 {
+  padding-top: 60px;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 22px;
+}
